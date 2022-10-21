@@ -3,18 +3,14 @@
 /**
  * _isalpha - prints c in lower or uppercase
  * written by abayomi
+ * @c: check char if is upper or lower case
  * Return: 1 if success or otherwise 0
  */
 
 int _isalpha(int c)
 {
-	char letter;
-	for (letter = 'a'; letter <= 'z'; letter++)
-		_putcher(letter);
-	_putcher('\n');
-	return (0);
-
-	else (letter = 'a'; letter <= 'z'; leeter++);
-	return (1);
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 }
-
