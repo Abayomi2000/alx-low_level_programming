@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * main - print _putchar
- * return: 0
+ * main - writes the program that print putcher
+ * written by abayomi
+ * Return: Description Always 0 (Success)
  */
 
 int main(void)
