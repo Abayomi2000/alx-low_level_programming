@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main - print all alphabet using lowercase
- * printing by abaomi
- * return: 0
+ * print_alphabet - print all alphabet using lowercase
+ * printing by abayomi
  */
 
 void print_alphabet(void)
