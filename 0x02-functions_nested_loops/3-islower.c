@@ -2,14 +2,15 @@
 
 /**
  * _islower - check the code in lowercase
- * @c: is the code to check for
- * return: alwas 0
+ * @c: char test
+ * Return: 1 if it is lower case otherwise 0
  */
-
 int _islower(int c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	else
+	{
+		if (c >= 'a' && c <= 'z')
+			return (1);
+	}
+	return (0);
 		return (0);
 }
