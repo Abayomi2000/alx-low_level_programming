@@ -1,30 +1,23 @@
 #inlude "main.h"
 
 /**
- * _strchr - allocate character in a string
- * @c: is the character
- * @s: is the string
- * Return: NULL
+ * _strchr - function with two arguments
+ * @s: char type pointer 1st argument
+ * @c: char type 2nd argument
+ *
+ * Description: locates a character in a string
+ * Return: character in string
  */
-
 char *_strchr(char *s, char c)
 {
-	int a = 0, b;
-
-	while (s[a])
+	while (*s)
 	{
-		a++;
-	}
-
-	for (b = 0; b <= a; b++)
-	{
-		if (c == s[b])
-		{
-			s == b;
+		if (*s == c)
 			return (s);
-		}
-
-		return ('\0');
+		s++;
 	}
+	if (*s == c)
+		return (s);
+	return (0);
 }
 
