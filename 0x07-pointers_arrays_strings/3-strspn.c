@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * _strspn - length of a prefix substring
- * @s: contains bytes
- * @accept: char type pointer segment
+ * _strspn - function with two arguments
+ * @s: char type pointer 1st argument
+ * @accept: char type pointer 2nd argument
+ *
+ * Description: get the length of a prefix substring
  * Return: length
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
 	int i, j;
@@ -21,7 +22,6 @@ unsigned int _strspn(char *s, char *accept)
 		if (!accept[j])
 			break;
 	}
-	return (i)
+	return (i);
 }
-
 
