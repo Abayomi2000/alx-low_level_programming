@@ -5,6 +5,7 @@
  * @n: copy to the memory area
  * @src: copy from n to src memory
  * @dest: copy to destination
+ * Description: copies memory area
  * Return: dest
  */
 
