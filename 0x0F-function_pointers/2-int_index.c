@@ -1,5 +1,5 @@
 #include <stddef.h>
-#include "function_pointers.h"
+#include "main.h"
 
 /**
  * int_index - function with 3 arguments

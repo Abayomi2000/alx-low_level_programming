@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_name - function that print name
  * @name: Abayomi is a char type point to name

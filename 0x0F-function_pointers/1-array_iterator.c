@@ -1,5 +1,5 @@
 #include <stddef.h>
-#include "function_pointers.h"
+#include "main.h"
 
 /**
  * array_iterator - function with three arguments
