@@ -1,6 +1,6 @@
-#ifndef "MAIN_H"
+#ifndef "variadic_functions.h"
 
-#define "MAIN_H"
+#define "variadic_functions.h"
 int sum_them_all(const unsigned int n, ...);
 
 
