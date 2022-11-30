@@ -1,56 +1,34 @@
-#include "lists.h"
+#include <stdlib.h>
 #include <stdio.h>
-
+#include "lists.h"
 /**
- * print_listint_safe - function that prints a listint_t linked list.
- * @head: pointer to head of a list.
- *
- * Return: Length of list (INT)
+ * print_listint_safe - print list
+ * @head: head node
+ * Return: amount of nodes in list
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *slow_p = head ,*fast_p = head;
-	size_t ele = 0;
-	int is_loop = 0;
+	int size = 0, i;
+	const listint_t *tmp[100];
 
-	while (slow_p && fast_p && fast_p->next)
-	{
-		if (!(fast_p->next->next))
-			break;
-		slow_p = slow_p->next;
-		fast_p = fast_p->next->next;
-		if (slow_p == fast_p)
-		{
-			slow_p = slow_p->next;
-			is_loop = 1;
-			break;
-		}
-	}
-
-	if (!is_loop)
-	{
-		while (head)
-		{
-			ele++;
-			printf("[%p] %d\n", (void *)head, head->n);
-			head = head->next;
-		}
-		return (ele);
-	}
+	if (!head)
+		exit(98);
 
 	while (head)
 	{
-		ele++;
-		if (head == slow_p)
+		for (i = 0; i < size; i++)
 		{
-			printf("[%p] %d\n", (void *)head, head->n);
-			printf("-> [%p] %d\n", (void *)head, head->next->n);
-			exit(98);
+			if (tmp[i] == head)
+			{
+				printf("-> [%p] %d\n", (void *)head, head->n);
+				return (size);
+			}
 		}
-
 		printf("[%p] %d\n", (void *)head, head->n);
+		tmp[size] = head;
+		size++;
 		head = head->next;
 	}
-	return (0);
+	return (size);
 }
 
